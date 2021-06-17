@@ -1,15 +1,14 @@
 document.addEventListener("DOMContentLoaded", (event) => {
     window.addEventListener("resize", detectOrientation) ;
     detectOrientation() ;
-   });
-   function detectOrientation(){
-    //Votre code ici
+});
+function detectOrientation(){
 
     let rotate = document.getElementById('rotateScreen');
     let discont = document.getElementById('displayContent');
 
     console.log(window.orientation);
-    
+
 
     if  (window.orientation == 0)  {
         rotate.setAttribute("style" , "display:block");
@@ -21,6 +20,5 @@ document.addEventListener("DOMContentLoaded", (event) => {
         discont.setAttribute("style" , "display:block");
 
     }
-   
-   }
-   
+
+}
